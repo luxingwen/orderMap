@@ -4,7 +4,7 @@
 
 ### 使用
 
-```
+```go
 package main
 
 import (
@@ -19,13 +19,13 @@ func main() {
 	fmt.Println(oMap)
 
 	// use Get instead of i, ok := oMap["a"]
-    val, ok := oMap.Get("a")
+	val, ok := oMap.Get("a")
 
 	fmt.Println(oMap)
 
 	// use o.Delete instead of delete(oMap, key)
     err := oMap.Delete("a")
-    
+
 	oMap.SetKeys([]string{"time", "data", "a"})
 	fmt.Println(oMap)
 
