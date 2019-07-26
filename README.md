@@ -1,6 +1,6 @@
 # orderMap
 
-有序的map, 类似python的 collections.OrderedDict
+Golang有序的map, 类似python的 collections.OrderedDict
 
 ### 使用
 
@@ -24,7 +24,7 @@ func main() {
 	fmt.Println(oMap)
 
 	// use o.Delete instead of delete(oMap, key)
-    err := oMap.Delete("a")
+	err := oMap.Delete("a")
 
 	oMap.SetKeys([]string{"time", "data", "a"})
 	fmt.Println(oMap)
